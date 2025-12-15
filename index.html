@@ -13,7 +13,7 @@
         body {
             font-family: 'Noto Sans JP', sans-serif;
             background-color: #111827;
-            /* --- MODIFIED: モバイル トップ背景画像 変更 --- */
+            /* モバイル トップ背景画像 */
             background-image: url('https://lh3.googleusercontent.com/d/1tyaxU2OXdef99W5iIJZaN0P0uzdI1HHy');
             background-size: cover;
             background-position: center;
@@ -22,7 +22,7 @@
         /* PC background */
         @media (min-width: 768px) {
             body {
-                /* --- MODIFIED: PC トップ背景画像 変更 --- */
+                /* PC トップ背景画像 */
                 background-image: url('https://lh3.googleusercontent.com/d/1rO58KqrfbgRjun7YBIB7CLxtxQ0IPerp');
             }
         }
@@ -63,14 +63,14 @@
             background-color: rgba(17, 24, 39, 0.85);
         }
         .subpage-content-bg {
-            /* --- MODIFIED: モバイル サブページ背景画像 変更 --- */
+            /* モバイル サブページ背景画像 */
             background-image: url('https://lh3.googleusercontent.com/d/1RY-Fl_2rDmuSCjiVR8_3ZnqHTirZcm1t');
             background-size: cover;
             background-position: center;
         }
         @media (min-width: 768px) {
             .subpage-content-bg {
-                /* --- MODIFIED: PC サブページ背景画像 変更 --- */
+                /* PC サブページ背景画像 */
                 background-image: url('https://lh3.googleusercontent.com/d/1rp4LJYxN0wm1oHqwdPZ2vFVfUgnassfr');
             }
         }
@@ -79,14 +79,14 @@
             filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0));
         }
 
-        /* --- ADDED: Mobile hover effect for neon glow and pop out --- */
+        /* Mobile hover effect */
         #logo-container:hover img {
-            transform: scale(0.65); /* Base mobile scale is 0.6, so this is a slight increase */
+            transform: scale(0.65);
             filter: drop-shadow(0 0 15px #f97316) drop-shadow(0 0 30px rgba(249, 115, 22, 0.7));
         }
         
         @media (min-width: 768px) {
-            /* Desktop hover effect overrides the mobile one */
+            /* Desktop hover effect */
             #logo-container:hover img {
                 transform: scale(0.77); 
                 filter: drop-shadow(0 0 20px #f97316) drop-shadow(0 0 40px #f97316) drop-shadow(0 0 60px rgba(249, 115, 22, 0.7));
@@ -109,7 +109,6 @@
                 <div class="absolute inset-0 bg-black bg-opacity-60 rounded-xl"></div>
                 
                 <div id="logo-container" class="absolute inset-0 flex items-center justify-center cursor-pointer">
-                    <!-- --- MODIFIED: Increased mobile logo size --- -->
                     <img src="https://lh3.googleusercontent.com/d/1bXbK4nOYCZpTOpH3UjTKaiiPmG7K6dk0" alt="STourYS Logo" class="w-auto h-auto transform scale-[0.6] md:scale-[0.7]">
                 </div>
 
@@ -119,14 +118,13 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
-                    <!-- --- MODIFIED: Reduced dropdown menu size for mobile --- -->
                     <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-40 md:w-48 bg-gray-800 rounded-md shadow-lg z-50 border border-gray-700">
                         <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="schedule">SCHEDULE</a>
-                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="live-info">LIVE / EVENT</a>
-                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="entry">LIVE ENTRY</a>
-                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="event-participation">EVENT ENTRY</a>
-                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="staff">LEADERS</a>
-                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="other">OTHERS</a>
+                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="information">INFORMATION</a>
+                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="live">LIVE</a>
+                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="event">EVENT</a>
+                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="leaders">LEADERS</a>
+                        <a href="#" class="block px-3 py-2 text-xs text-gray-200 hover:bg-orange-600 dropdown-item" data-target="others">OTHERS</a>
                     </div>
                 </div>
             </header>
@@ -138,7 +136,6 @@
                         NEWS
                     </h2>
                     <div class="mt-4 text-gray-200 h-24 md:h-32 bg-gray-900/50 rounded-lg">
-                         <!-- --- MODIFIED: スプレッドシートUI非表示パラメータを追加 --- -->
                          <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQos9Hlpp-xVFo-jetfN1gGyTrF5Oo69WvTL-9L3YROKl74jV8EzVBr6yk81kpmp3BNOxyNSRC8VUls/pubhtml?widget=true&amp;headers=false&amp;rm=minimal" class="w-full h-full border-0 rounded-lg"></iframe>
                     </div>
                 </section>
@@ -149,29 +146,27 @@
                         <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">SCHEDULE</h3>
                         <p class="text-gray-400 mt-1">サークル年間スケジュール</p>
                     </div>
-                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="live-info">
+                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="information">
                         <img src="https://lh3.googleusercontent.com/d/1A4xvFPCur4U6CPgFWSVRrJDwQ3k1uRds" alt="Live/Event Icon" class="w-20 h-20 object-contain">
-                        <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">LIVE / EVENT</h3>
-                        <p class="text-gray-400 mt-1">ライブやイベントの最新情報</p>
+                        <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">INFORMATION</h3>
+                        <p class="text-gray-400 mt-1">最新情報</p>
                     </div>
-                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="entry">
+                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="live">
                         <img src="https://lh3.googleusercontent.com/d/1VaI6hE2x7lI6PHcaq8wXJK0biPTkLsbW" alt="Live Entry Icon" class="w-20 h-20 object-contain">
-                        <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">LIVE ENTRY</h3>
-                        <p class="text-gray-400 mt-1">ライブ出演エントリーはこちら</p>
+                        <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">LIVE</h3>
+                        <p class="text-gray-400 mt-1">ライブ情報</p>
                     </div>
-                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="event-participation">
+                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="event">
                         <img src="https://lh3.googleusercontent.com/d/1qkWejxm9-2aKcKg_eGt45NVD_7fVdAtW" alt="Event Entry Icon" class="w-20 h-20 object-contain">
-                        <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">EVENT ENTRY</h3>
-                        <p class="text-gray-400 mt-1">イベント参加はこちら</p>
+                        <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">EVENT</h3>
+                        <p class="text-gray-400 mt-1">イベント情報</p>
                     </div>
-                     <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="staff">
-                        <!-- --- MODIFIED: アイコンURLのタイプミスを修正 --- -->
+                     <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="leaders">
                         <img src="https://lh3.googleusercontent.com/d/1xkUhIzJd0xfV6QSr_Y9Ff_X8DDYUdwcD" alt="Leaders Icon" class="w-20 h-20 object-contain">
                         <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">LEADERS</h3>
                         <p class="text-gray-400 mt-1">サークル代表・運営体制</p>
                     </div>
-                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="other">
-                        <!-- --- MODIFIED: アイコンURLのタイプミスを修正 --- -->
+                    <div class="nav-card p-8 rounded-xl cursor-pointer flex flex-col items-center text-center" data-target="others">
                         <img src="https://lh3.googleusercontent.com/d/1b4uL4vGzoeIkOTuLC7tl090hf5coyskx" alt="Others Icon" class="w-20 h-20 object-contain">
                         <h3 class="text-2xl font-black font-montserrat mt-4 tracking-wide text-white">OTHERS</h3>
                         <p class="text-gray-400 mt-1">その他連絡事項</p>
@@ -211,51 +206,43 @@
                 return `<div class="h-[70vh] md:h-[80vh] bg-gray-900/50 rounded-lg overflow-hidden flex justify-center items-center">${styledIframe}</div>`;
             };
 
+            // ページデータのキーをハッシュ名に合わせて変更
             const pages = {
                 'schedule': {
                     title: '<img src="https://lh3.googleusercontent.com/d/13CREysegnBKP9VHSY8pJZtrqYSe3EagP" class="inline-block w-12 h-12 mr-3 transform scale-120">SCHEDULE',
                     subtitle: 'サークル年間スケジュール',
-                    /* --- MODIFIED: スプレッドシートUI非表示 --- */
                     content: embedContent('<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQa6oJPP-eDk2vHK6D33G5tdBgnFxBEBYQtgNyRhSupWzQ8A82vJvLaR1GM02LDZE3VpovyKkW8Ta9X/pubhtml?widget=true&amp;headers=false&amp;rm=minimal"></iframe>')
                 },
-                'live-info': {
-                    title: '<img src="https://lh3.googleusercontent.com/d/1A4xvFPCur4U6CPgFWSVRrJDwQ3k1uRds" class="inline-block w-12 h-12 mr-3 transform scale-120">LIVE / EVENT',
-                    subtitle: 'ライブやイベントの最新情報',
-                    /* --- MODIFIED: スプレッドシートUI非表示 --- */
+                'information': {
+                    title: '<img src="https://lh3.googleusercontent.com/d/1A4xvFPCur4U6CPgFWSVRrJDwQ3k1uRds" class="inline-block w-12 h-12 mr-3 transform scale-120">INFORMATION',
+                    subtitle: '最新情報',
                     content: embedContent('<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSL65RwxxokqV3qIdRHtOBDc_QHUTlFVS3D8dhuK6FmlC_xuLuq00dyY7l9lqjhoVC7pR6k_TjQrkT6/pubhtml?widget=true&amp;headers=false&amp;rm=minimal"></iframe>')
                 },
-                'entry': {
-                    title: '<img src="https://lh3.googleusercontent.com/d/1VaI6hE2x7lI6PHcaq8wXJK0biPTkLsbW" class="inline-block w-12 h-12 mr-3 transform scale-120">LIVE ENTRY',
-                    subtitle: 'ライブ出演エントリーはこちら',
-                    /* --- MODIFIED: スプレッドシートUI非表示 --- */
+                'live': {
+                    title: '<img src="https://lh3.googleusercontent.com/d/1VaI6hE2x7lI6PHcaq8wXJK0biPTkLsbW" class="inline-block w-12 h-12 mr-3 transform scale-120">LIVE',
+                    subtitle: 'ライブ情報',
                     content: embedContent('<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTe3uhKoXAzc3AnMH7EOhtY1OgkHP12zeZAcHOPbmWMQXNGEAaddYAqf7zds0K_4y3VSr-MNFUQiuKN/pubhtml?widget=true&amp;headers=false&amp;rm=minimal"></iframe>')
                 },
-                'event-participation': {
-                    title: '<img src="https://lh3.googleusercontent.com/d/1qkWejxm9-2aKcKg_eGt45NVD_7fVdAtW" class="inline-block w-12 h-12 mr-3 transform scale-120">EVENT ENTRY',
-                    subtitle: 'イベント参加はこちら',
-                    /* --- MODIFIED: スプレッドシートUI非表示 --- */
+                'event': {
+                    title: '<img src="https://lh3.googleusercontent.com/d/1qkWejxm9-2aKcKg_eGt45NVD_7fVdAtW" class="inline-block w-12 h-12 mr-3 transform scale-120">EVENT',
+                    subtitle: 'イベント情報',
                     content: embedContent('<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDeC92tP6HF4VPPzMLc5QI90eZhOycGazrtO_N3L95GVIXTLf7Na6wQOuDpHaezDKlprGFhh40lF8k/pubhtml?widget=true&amp;headers=false&amp;rm=minimal"></iframe>')
                 },
-                'staff': {
+                'leaders': {
                     title: '<img src="https://lh3.googleusercontent.com/d/1xkUhIzJd0xfV6QSr_Y9Ff_X8DDYUdwcD" class="inline-block w-12 h-12 mr-3 transform scale-120">LEADERS',
                     subtitle: 'サークル代表・運営体制',
-                    /* --- MODIFIED: スプレッドシートUI非表示 --- */
                     content: embedContent('<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRauh4Dh-FhCijgsSBWp-U7oc_Gnunc0f1Co41ozE1KQr1DExTwRczmqobyXO8-Uaye9qrSwmHt2p33/pubhtml?widget=true&amp;headers=false&amp;rm=minimal"></iframe>')
                 },
-                'other': {
+                'others': {
                     title: '<img src="https://lh3.googleusercontent.com/d/1b4uL4vGzoeIkOTuLC7tl090hf5coyskx" class="inline-block w-12 h-12 mr-3 transform scale-120">OTHERS',
                     subtitle: 'その他連絡事項',
-                    /* --- MODIFIED: スプレッドシートUI非表示 --- */
                     content: embedContent('<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ5Z4koaa0EuHC6Pjt15zxlxlnrqKsxlw31lTlSSGEOxRMrPT24EUpDBonUpnhoNBlWVGpV5ld6W1JS/pubhtml?widget=true&amp;headers=false&amp;rm=minimal"></iframe>')
                 }
             };
 
-            // --- URLハッシュベースのルーティング実装 ---
-
-            // ページ表示処理 (View)
-            function renderPage(pageId) {
-                if (pageId && pages[pageId]) {
-                    // サブページ表示
+            // ページ表示関数
+            function showPage(pageId) {
+                if (pages[pageId]) {
                     pageContent.innerHTML = `
                         <h2 class="text-3xl md:text-4xl font-black font-oswald mb-2 text-orange-500 tracking-wider flex items-center">${pages[pageId].title}</h2>
                         <p class="text-white font-bold mb-6 text-base md:text-lg subtitle-marker">${pages[pageId].subtitle}</p>
@@ -265,37 +252,51 @@
                     pageView.classList.remove('hidden');
                     window.scrollTo(0, 0);
                 } else {
-                    // トップページ表示
-                    pageView.classList.add('hidden');
-                    homeView.classList.remove('hidden');
-                    window.scrollTo(0, 0);
+                    // 該当ページがない場合はホームを表示
+                    showHomeView();
                 }
             }
+            
+            // ホームビュー表示関数 (内部処理用)
+            function showHomeView() {
+                pageView.classList.add('hidden');
+                homeView.classList.remove('hidden');
+                window.scrollTo(0, 0);
+            }
 
-            // ハッシュ変更時のイベントハンドラ (Route)
+            // ホームへ戻る (ハッシュをクリア)
+            function showHome() {
+                // ハッシュが存在する場合のみ履歴を追加してクリア
+                if (window.location.hash) {
+                    // history.pushStateを使用してURLを変更 (ハッシュ削除)
+                    // URL末尾の#以降を削除したURLを生成
+                    const noHashURL = window.location.href.split('#')[0];
+                    history.pushState("", document.title, noHashURL);
+                    // pushStateはhashchangeイベントを発火しないため、手動でビューを切り替え
+                    showHomeView();
+                } else {
+                    showHomeView();
+                }
+                dropdownMenu.classList.add('hidden');
+            }
+            
+            // ハッシュ変更時のイベントハンドラ
             window.addEventListener('hashchange', () => {
-                const pageId = window.location.hash.substring(1); // #を除去
-                renderPage(pageId);
+                const hash = window.location.hash.substring(1); // #を除去
+                if (hash) {
+                    showPage(hash);
+                } else {
+                    showHomeView();
+                }
             });
 
-            // ページ遷移関数 (Navigate) - ハッシュを更新して履歴に残す
+            // ページ遷移 (ハッシュを更新)
             const navigate = (targetPage) => {
                 window.location.hash = targetPage;
                 dropdownMenu.classList.add('hidden');
             };
 
-            // ホームへ戻る関数 (Home) - ハッシュをクリアする
-            const showHome = () => {
-                // 履歴を残しつつハッシュをクリア
-                // NOTE: pushStateだけではhashchangeが発火しないため、手動でrenderPageを呼ぶか、空ハッシュを代入する
-                // 互換性のため window.location.hash = '' を使用しても良いが、#が残る場合があるため pushState推奨
-                history.pushState(null, null, ' '); 
-                renderPage(''); // ビュー更新
-                dropdownMenu.classList.add('hidden');
-            };
-
-            // --- イベントリスナー設定 ---
-
+            // イベントリスナーの設定
             navCards.forEach(card => {
                 card.addEventListener('click', () => navigate(card.getAttribute('data-target')));
             });
@@ -321,11 +322,10 @@
                 }
             });
 
-            // --- 初期ロード時の処理 ---
-            // ページ読み込み時にURLハッシュを確認して該当ページを開く
+            // 初期ロード時の処理 (URLにハッシュがある場合そのページを開く)
             const initialHash = window.location.hash.substring(1);
-            if (initialHash) {
-                renderPage(initialHash);
+            if (initialHash && pages[initialHash]) {
+                showPage(initialHash);
             }
         });
     </script>
